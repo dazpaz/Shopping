@@ -32,6 +32,7 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Shopping.Api\Shopping.Api.csproj" />
     <ProjectReference Include="..\Shopping.ProductCatalog\Shopping.ProductCatalog.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
