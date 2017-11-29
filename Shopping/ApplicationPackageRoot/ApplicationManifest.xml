@@ -5,10 +5,16 @@
     <Parameter Name="Shopping.ProductCatalog_MinReplicaSetSize" DefaultValue="3" />
     <Parameter Name="Shopping.ProductCatalog_PartitionCount" DefaultValue="1" />
     <Parameter Name="Shopping.ProductCatalog_TargetReplicaSetSize" DefaultValue="3" />
+    <Parameter Name="UserActorService_PartitionCount" DefaultValue="10" />
+    <Parameter Name="UserActorService_MinReplicaSetSize" DefaultValue="3" />
+    <Parameter Name="UserActorService_TargetReplicaSetSize" DefaultValue="3" />
   </Parameters>
   <!-- Import the ServiceManifest from the ServicePackage. The ServiceManifestName and ServiceManifestVersion 
        should match the Name and Version attributes of the ServiceManifest element defined in the 
        ServiceManifest.xml file. -->
+  <ServiceManifestImport>
+    <ServiceManifestRef ServiceManifestName="UserActorPkg" ServiceManifestVersion="1.0.0" />
+  </ServiceManifestImport>
   <ServiceManifestImport>
     <ServiceManifestRef ServiceManifestName="Shopping.ApiPkg" ServiceManifestVersion="1.0.0" />
     <ConfigOverrides />
@@ -31,6 +37,11 @@
     <Service Name="Shopping.ProductCatalog" ServicePackageActivationMode="ExclusiveProcess">
       <StatefulService ServiceTypeName="Shopping.ProductCatalogType" TargetReplicaSetSize="[Shopping.ProductCatalog_TargetReplicaSetSize]" MinReplicaSetSize="[Shopping.ProductCatalog_MinReplicaSetSize]">
         <UniformInt64Partition PartitionCount="[Shopping.ProductCatalog_PartitionCount]" LowKey="-9223372036854775808" HighKey="9223372036854775807" />
+      </StatefulService>
+    </Service>
+    <Service Name="UserActorService" GeneratedIdRef="574c9d2c-7cd0-4e38-b3b7-7b88b762ad39|Persisted">
+      <StatefulService ServiceTypeName="UserActorServiceType" TargetReplicaSetSize="[UserActorService_TargetReplicaSetSize]" MinReplicaSetSize="[UserActorService_MinReplicaSetSize]">
+        <UniformInt64Partition PartitionCount="[UserActorService_PartitionCount]" LowKey="-9223372036854775808" HighKey="9223372036854775807" />
       </StatefulService>
     </Service>
   </DefaultServices>
