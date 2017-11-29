@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserActor", "UserActor\User
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserActor.Interfaces", "UserActor.Interfaces\UserActor.Interfaces.csproj", "{1ED61E2A-0C94-4BEF-B2E4-CFCB21974EFD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shopping.CheckoutService", "Shopping.CheckoutService\Shopping.CheckoutService.csproj", "{C6488816-9820-456F-AED8-4F1E9C792C51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shopping.CheckoutService.Model", "Shopping.CheckoutService.Model\Shopping.CheckoutService.Model.csproj", "{BBF3AD62-AFAC-4E64-BAAF-29B2E541634A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +69,20 @@ Global
 		{1ED61E2A-0C94-4BEF-B2E4-CFCB21974EFD}.Release|Any CPU.ActiveCfg = Release|x64
 		{1ED61E2A-0C94-4BEF-B2E4-CFCB21974EFD}.Release|x64.ActiveCfg = Release|x64
 		{1ED61E2A-0C94-4BEF-B2E4-CFCB21974EFD}.Release|x64.Build.0 = Release|x64
+		{C6488816-9820-456F-AED8-4F1E9C792C51}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{C6488816-9820-456F-AED8-4F1E9C792C51}.Debug|x64.ActiveCfg = Debug|x64
+		{C6488816-9820-456F-AED8-4F1E9C792C51}.Debug|x64.Build.0 = Debug|x64
+		{C6488816-9820-456F-AED8-4F1E9C792C51}.Release|Any CPU.ActiveCfg = Release|x64
+		{C6488816-9820-456F-AED8-4F1E9C792C51}.Release|x64.ActiveCfg = Release|x64
+		{C6488816-9820-456F-AED8-4F1E9C792C51}.Release|x64.Build.0 = Release|x64
+		{BBF3AD62-AFAC-4E64-BAAF-29B2E541634A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF3AD62-AFAC-4E64-BAAF-29B2E541634A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF3AD62-AFAC-4E64-BAAF-29B2E541634A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BBF3AD62-AFAC-4E64-BAAF-29B2E541634A}.Debug|x64.Build.0 = Debug|Any CPU
+		{BBF3AD62-AFAC-4E64-BAAF-29B2E541634A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF3AD62-AFAC-4E64-BAAF-29B2E541634A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBF3AD62-AFAC-4E64-BAAF-29B2E541634A}.Release|x64.ActiveCfg = Release|Any CPU
+		{BBF3AD62-AFAC-4E64-BAAF-29B2E541634A}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
